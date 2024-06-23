@@ -1,0 +1,14 @@
+.upload-button {
+  background-color: #1b586c; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 25px; /* Rounded corners */
+  border: none; /* No border */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: opacity 0.3s ease; /* Smooth transition on hover */
+}
+
+.upload-button:hover {
+  opacity: 0.8; /* Slightly transparent on hover */
+}
