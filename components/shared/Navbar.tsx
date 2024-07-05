@@ -277,10 +277,14 @@ const Navbar = () => {
                 </DropdownMenu>
               </div>
               <div className="flex items-center justify-center gap-2 text-white">
-                <Button>Log in</Button>
-                <Button className="bg-white text-black px-3 py-2 rounded-full hover:bg-white hover:opacity-80">
-                  Sign up free
-                </Button>
+                <Link href="/login">
+                  <Button>Log in</Button>
+                </Link>
+                <Link href="/signup">
+                  <Button className="bg-white text-black px-3 py-2 rounded-full hover:bg-white hover:opacity-80">
+                    Sign up free
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -424,10 +428,14 @@ const Navbar = () => {
                     </DropdownMenu>
                   </div>
                   <div className="flex flex-col items-start justify-start gap-2 text-white">
-                    <Button>Log in</Button>
-                    <Button className="bg-white text-black px-3 py-2 rounded-xl hover:bg-white hover:opacity-80">
-                      Sign up free
-                    </Button>
+                    <Link href="/login">
+                      <Button>Log in</Button>
+                    </Link>
+                    <Link href="/signup">
+                      <Button className="bg-white text-black px-3 py-2 rounded-xl hover:bg-white hover:opacity-80">
+                        Sign up free
+                      </Button>
+                    </Link>
                   </div>
                 </div>
                 <div className="flex items-center justify-center gap-10 relative mt-10">
