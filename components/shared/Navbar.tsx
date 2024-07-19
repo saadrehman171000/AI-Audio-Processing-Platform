@@ -17,13 +17,17 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+
 import splitter from "@/public/splittersvg.png";
 import advanced from "@/public/advancedsplitsvg.png";
 import chords from "@/public/chordfinder.svg";
 import mixing from "@/public/mixingsvg.png";
+import { useUser } from "@/app/state/state";
 import vocal from "@/public/removersvg.png";
+import { CircleUserRound } from "lucide-react";
 
 const Navbar = () => {
+  const { user } = useUser();
   const pathname = usePathname();
   const router = useRouter();
   const [showBackground, setShowBackground] = useState(false);
@@ -276,16 +280,21 @@ const Navbar = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>
-              <div className="flex items-center justify-center gap-2 text-white">
-                <Link href="/login">
-                  <Button>Log in</Button>
-                </Link>
-                <Link href="/signup">
-                  <Button className="bg-white text-black px-3 py-2 rounded-full hover:bg-white hover:opacity-80">
-                    Sign up free
-                  </Button>
-                </Link>
-              </div>
+
+              {user && user.access_token ? (
+                <div className="flex items-center justify-center gap-2 text-white">
+                  <Link href="/login">
+                    <Button>Log in</Button>
+                  </Link>
+                  <Link href="/signup">
+                    <Button className="bg-white text-black px-3 py-2 rounded-xl hover:bg-white hover:opacity-80">
+                      Sign up free
+                    </Button>
+                  </Link>
+                </div>
+              ) : (
+                <CircleUserRound />
+              )}
             </div>
           </div>
         </div>
@@ -427,16 +436,20 @@ const Navbar = () => {
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
-                  <div className="flex flex-col items-start justify-start gap-2 text-white">
-                    <Link href="/login">
-                      <Button>Log in</Button>
-                    </Link>
-                    <Link href="/signup">
-                      <Button className="bg-white text-black px-3 py-2 rounded-xl hover:bg-white hover:opacity-80">
-                        Sign up free
-                      </Button>
-                    </Link>
-                  </div>
+                  {user && user.access_token ? (
+                    <>
+                      <Link href="/login">
+                        <Button>Log in</Button>
+                      </Link>
+                      <Link href="/signup">
+                        <Button className="bg-white text-black px-3 py-2 rounded-xl hover:bg-white hover:opacity-80">
+                          Sign up free
+                        </Button>
+                      </Link>
+                    </>
+                  ) : (
+                    <CircleUserRound />
+                  )}
                 </div>
                 <div className="flex items-center justify-center gap-10 relative mt-10">
                   <Link

@@ -1,10 +1,54 @@
-import React from 'react';
-import Link from 'next/link';
+"use client";
+import * as z from "zod";
+import { useForm } from "react-hook-form";
+import { LoginForm } from "@/lib/validator";
+
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import React from "react";
+import Link from "next/link";
+
+import { redirect } from "next/navigation";
+import { Input } from "../ui/input";
+import { Button } from "../ui/button";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useRouter } from "next/navigation";
+import { Toaster, toast } from "sonner";
+import { useUser } from "@/app/state/state";
 
 const Login: React.FC = () => {
+  const { user, logedInUser } = useUser();
+  const router = useRouter();
+  const initialValues = {
+    username: "",
+    password: "",
+  };
+  const form = useForm<z.infer<typeof LoginForm>>({
+    resolver: zodResolver(LoginForm),
+    defaultValues: initialValues,
+    mode: "onSubmit",
+  });
+
+  const onSubmit = async (values: z.infer<typeof LoginForm>) => {
+    try {
+      await logedInUser(values);
+      toast.success("Logged in successfully");
+      form.reset();
+      router.push("/");
+    } catch (error) {
+      console.error("Login Error: Unknown error occurred", error);
+    }
+  };
+
   return (
     <div className="min-h-screen flex">
-      <div className="flex-1 flex items-center justify-center bg-gradient-to-r from-purple-500 to-indigo-500 p-10">
+      <div className="flex-1 flex items-center justify-center bg-[#1b586c]  p-10">
         <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-xl shadow-md">
           <h2 className="text-center text-3xl font-extrabold text-gray-900">
             Hello!
@@ -12,93 +56,95 @@ const Login: React.FC = () => {
           <p className="text-center text-sm text-gray-600">
             Sign in to your account
           </p>
-          <form className="mt-8 space-y-6">
-            <div className="rounded-md shadow-sm -space-y-px">
-              <div className="flex items-center border rounded-md p-2 mb-2">
-                <span className="mr-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-purple-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
+          <Form {...form}>
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="mt-8 space-y-6"
+            >
+              {/* Username Field */}
+              <FormField
+                control={form.control}
+                name="username"
+                render={({ field, fieldState: { error } }) => (
+                  <FormItem className="relative">
+                    <FormLabel className="font-bold text-gray-900">
+                      Username *
+                    </FormLabel>
+                    <FormControl>
+                      <Input type="text" placeholder="Username" {...field} />
+                    </FormControl>
+                    {error && (
+                      <FormMessage className="text-red-500">
+                        {error.message}
+                      </FormMessage>
+                    )}
+                  </FormItem>
+                )}
+              />
+              {/* Password Field */}
+              <FormField
+                control={form.control}
+                name="password"
+                render={({ field, fieldState: { error } }) => (
+                  <FormItem className="relative">
+                    <FormLabel className="font-bold text-gray-900">
+                      Password *
+                    </FormLabel>
+                    <FormControl>
+                      <Input
+                        type="password"
+                        placeholder="Password"
+                        {...field}
+                      />
+                    </FormControl>
+                    {error && (
+                      <FormMessage className="text-red-500">
+                        {error.message}
+                      </FormMessage>
+                    )}
+                  </FormItem>
+                )}
+              />
+              {/* Remember Me Checkbox */}
+              {/* <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <input
+                    id="remember_me"
+                    type="checkbox"
+                    {...form.register("rememberMe")}
+                    className="h-4 w-4 text-[#1b586c] focus:ring-[#1b586c] border-gray-300 rounded"
+                  />
+                  <label
+                    htmlFor="remember_me"
+                    className="ml-2 block text-sm text-gray-900"
                   >
-                    <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5z" />
-                  </svg>
-                </span>
-                <input
-                  id="email-address"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  required
-                  className="appearance-none rounded-none relative block w-full px-3 py-2 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                  placeholder="Email address"
-                />
-              </div>
-              <div className="flex items-center border rounded-md p-2 mb-2">
-                <span className="mr-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-purple-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
+                    Remember me
+                  </label>
+                </div>
+
+                <div className="text-sm">
+                  <Link
+                    href="#"
+                    className="font-medium text-[#2d96b9] hover:text-[#1b586c] hover:opacity-80"
                   >
-                    <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5z" />
-                  </svg>
-                </span>
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  autoComplete="current-password"
-                  required
-                  className="appearance-none rounded-none relative block w-full px-3 py-2 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                  placeholder="Password"
-                />
-              </div>
-            </div>
+                    Forgot your password?
+                  </Link>
+                </div>
+              </div> */}
 
-            <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <input
-                  id="remember_me"
-                  name="remember_me"
-                  type="checkbox"
-                  className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-                />
-                <label htmlFor="remember_me" className="ml-2 block text-sm text-gray-900">
-                  Remember me
-                </label>
-              </div>
-              <div className="text-sm">
-                <Link href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                  Forgot your password?
-                </Link>
-              </div>
-            </div>
-
-            <div>
-              <button
+              <Button
                 type="submit"
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gradient-to-r from-purple-500 to-indigo-500 hover:bg-gradient-to-l focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="w-full group relative w- flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#1b586c] hover:bg-[#1b586c] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1b586c] hover:opacity-80"
               >
-                SIGN IN
-              </button>
-            </div>
-          </form>
+                {form.formState.isSubmitting ? "Logging in..." : "Login"}
+              </Button>
+            </form>
+          </Form>
           <p className="text-center text-sm text-gray-600">
-            Don't have an account?{' '}
-            <Link href="/signup" className="font-medium text-indigo-600 hover:text-indigo-500">
+            Don't have an account?{" "}
+            <Link href="/signup" className="text-[#2d96b9]">
               Create
             </Link>
-          </p>
-        </div>
-      </div>
-      <div className="hidden lg:flex flex-1 items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-500 p-10 text-white">
-        <div className="max-w-md space-y-8">
-          <h2 className="text-3xl font-extrabold">Welcome Back!</h2>
-          <p>
-          Sign in to continue enjoying our exclusive features and great user experience.
           </p>
         </div>
       </div>

@@ -1,0 +1,777 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\saadr\Desktop\AudioGenius\frontend\%APPDATA%\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v22.3.0
+3 silly config load:file:C:\Users\saadr\Desktop\AudioGenius\frontend\%APPDATA%\npm\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\saadr\Desktop\AudioGenius\frontend\.npmrc
+5 silly config load:file:C:\Users\saadr\.npmrc
+6 silly config load:file:C:\Users\saadr\Desktop\AudioGenius\frontend\%APPDATA%\npm\etc\npmrc
+7 verbose title npm install next@latest react@latest react-dom@latest
+8 verbose argv "install" "next@latest" "react@latest" "react-dom@latest"
+9 verbose logfile logs-max:10 dir:C:\Users\saadr\Desktop\AudioGenius\frontend\%APPDATA%\npm-cache\_logs\2024-07-16T11_09_17_882Z-
+10 verbose logfile C:\Users\saadr\Desktop\AudioGenius\frontend\%APPDATA%\npm-cache\_logs\2024-07-16T11_09_17_882Z-debug-0.log
+11 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+12 silly logfile start cleaning logs, removing 2 files
+13 silly logfile done cleaning log files
+14 silly packumentCache corgi:https://registry.npmjs.org/next cache-miss
+15 silly packumentCache corgi:https://registry.npmjs.org/react cache-miss
+16 silly packumentCache corgi:https://registry.npmjs.org/react-dom cache-miss
+17 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+18 http fetch GET 200 https://registry.npmjs.org/react 840ms (cache miss)
+19 silly packumentCache corgi:https://registry.npmjs.org/react set size:undefined disposed:false
+20 http fetch GET 200 https://registry.npmjs.org/react-dom 892ms (cache miss)
+21 silly packumentCache corgi:https://registry.npmjs.org/react-dom set size:undefined disposed:false
+22 http fetch GET 200 https://registry.npmjs.org/next 1025ms (cache miss)
+23 silly packumentCache corgi:https://registry.npmjs.org/next set size:undefined disposed:false
+24 silly idealTree buildDeps
+25 silly fetch manifest next@14.2.5
+26 silly packumentCache full:https://registry.npmjs.org/next cache-miss
+27 http fetch GET 200 https://registry.npmjs.org/next 637ms (cache miss)
+28 silly packumentCache full:https://registry.npmjs.org/next set size:undefined disposed:false
+29 silly fetch manifest @opentelemetry/api@^1.1.0
+30 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fapi cache-miss
+31 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fapi 852ms (cache miss)
+32 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fapi set size:undefined disposed:false
+33 silly fetch manifest @playwright/test@^1.41.2
+34 silly packumentCache full:https://registry.npmjs.org/@playwright%2ftest cache-miss
+35 http fetch GET 200 https://registry.npmjs.org/@playwright%2ftest 598ms (cache miss)
+36 silly packumentCache full:https://registry.npmjs.org/@playwright%2ftest set size:undefined disposed:false
+37 silly fetch manifest react@18.3.1
+38 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+39 http fetch GET 200 https://registry.npmjs.org/react 726ms (cache miss)
+40 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+41 silly fetch manifest react-dom@18.3.1
+42 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+43 http fetch GET 200 https://registry.npmjs.org/react-dom 170ms (cache miss)
+44 silly packumentCache full:https://registry.npmjs.org/react-dom set size:undefined disposed:false
+45 silly fetch manifest sass@^1.3.0
+46 silly packumentCache full:https://registry.npmjs.org/sass cache-miss
+47 http fetch GET 200 https://registry.npmjs.org/sass 158ms (cache miss)
+48 silly packumentCache full:https://registry.npmjs.org/sass set size:undefined disposed:false
+49 silly placeDep ROOT next@14.2.5 REPLACE for: music-app@0.1.0 want: 14.2.5
+50 silly placeDep ROOT react@18.3.1 REPLACE for: music-app@0.1.0 want: 18.3.1
+51 silly placeDep ROOT react-dom@18.3.1 REPLACE for: music-app@0.1.0 want: 18.3.1
+52 silly fetch manifest @next/env@14.2.5
+53 silly packumentCache full:https://registry.npmjs.org/@next%2fenv cache-miss
+54 silly fetch manifest @next/swc-darwin-x64@14.2.5
+55 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-darwin-x64 cache-miss
+56 silly fetch manifest @next/swc-darwin-arm64@14.2.5
+57 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-darwin-arm64 cache-miss
+58 silly fetch manifest @next/swc-linux-x64-gnu@14.2.5
+59 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-x64-gnu cache-miss
+60 silly fetch manifest @next/swc-linux-x64-musl@14.2.5
+61 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-x64-musl cache-miss
+62 silly fetch manifest @next/swc-win32-x64-msvc@14.2.5
+63 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-x64-msvc cache-miss
+64 silly fetch manifest @next/swc-linux-arm64-gnu@14.2.5
+65 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-arm64-gnu cache-miss
+66 http fetch GET 200 https://registry.npmjs.org/@next%2fenv 541ms (cache miss)
+67 silly packumentCache full:https://registry.npmjs.org/@next%2fenv set size:undefined disposed:false
+68 silly fetch manifest @next/swc-win32-ia32-msvc@14.2.5
+69 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-ia32-msvc cache-miss
+70 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-darwin-x64 1607ms (cache miss)
+71 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-darwin-x64 set size:undefined disposed:false
+72 silly fetch manifest @next/swc-linux-arm64-musl@14.2.5
+73 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-arm64-musl cache-miss
+74 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-linux-x64-musl 1756ms (cache miss)
+75 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-x64-musl set size:undefined disposed:false
+76 silly fetch manifest @next/swc-win32-arm64-msvc@14.2.5
+77 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-arm64-msvc cache-miss
+78 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-linux-x64-gnu 2208ms (cache miss)
+79 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-x64-gnu set size:undefined disposed:false
+80 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-linux-arm64-gnu 2257ms (cache miss)
+81 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-arm64-gnu set size:undefined disposed:false
+82 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-win32-x64-msvc 2549ms (cache miss)
+83 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-x64-msvc set size:undefined disposed:false
+84 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-win32-arm64-msvc 878ms (cache miss)
+85 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-arm64-msvc set size:undefined disposed:false
+86 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-darwin-arm64 3180ms (cache miss)
+87 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-darwin-arm64 set size:undefined disposed:false
+88 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-linux-arm64-musl 3189ms (cache miss)
+89 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-arm64-musl set size:undefined disposed:false
+90 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-win32-ia32-msvc 5434ms (cache miss)
+91 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-ia32-msvc set size:undefined disposed:false
+92 silly placeDep ROOT @next/env@14.2.5 OK for: next@14.2.5 want: 14.2.5
+93 silly placeDep ROOT @next/swc-darwin-arm64@14.2.5 OK for: next@14.2.5 want: 14.2.5
+94 silly placeDep ROOT @next/swc-darwin-x64@14.2.5 OK for: next@14.2.5 want: 14.2.5
+95 silly placeDep ROOT @next/swc-linux-arm64-gnu@14.2.5 OK for: next@14.2.5 want: 14.2.5
+96 silly placeDep ROOT @next/swc-linux-arm64-musl@14.2.5 OK for: next@14.2.5 want: 14.2.5
+97 silly placeDep ROOT @next/swc-linux-x64-gnu@14.2.5 OK for: next@14.2.5 want: 14.2.5
+98 silly placeDep ROOT @next/swc-linux-x64-musl@14.2.5 OK for: next@14.2.5 want: 14.2.5
+99 silly placeDep ROOT @next/swc-win32-arm64-msvc@14.2.5 OK for: next@14.2.5 want: 14.2.5
+100 silly placeDep ROOT @next/swc-win32-ia32-msvc@14.2.5 OK for: next@14.2.5 want: 14.2.5
+101 silly placeDep ROOT @next/swc-win32-x64-msvc@14.2.5 OK for: next@14.2.5 want: 14.2.5
+102 silly reify mark retired [
+102 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\next',
+102 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\.bin\\next',
+102 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\.bin\\next.cmd',
+102 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\.bin\\next.ps1'
+102 silly reify ]
+103 silly reify mark retired [
+103 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\env'
+103 silly reify ]
+104 silly reify mark retired [
+104 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\swc-win32-x64-msvc'
+104 silly reify ]
+105 silly reify moves {
+105 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\next': 'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\.next-t1j9bQVo',
+105 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\.bin\\next': 'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\.bin\\.next-00zJkMmW',
+105 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\.bin\\next.cmd': 'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\.bin\\.next.cmd-tUg10MWh',
+105 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\.bin\\next.ps1': 'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\.bin\\.next.ps1-LDBAyUeQ',
+105 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\env': 'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\.env-sZWsY3o2',
+105 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\swc-win32-x64-msvc': 'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\.swc-win32-x64-msvc-ykPTw499'
+105 silly reify }
+106 silly audit bulk request {
+106 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+106 silly audit   '@babel/runtime': [ '7.24.7' ],
+106 silly audit   '@effect/schema': [ '0.66.16' ],
+106 silly audit   '@floating-ui/core': [ '1.6.2' ],
+106 silly audit   '@floating-ui/dom': [ '1.6.5' ],
+106 silly audit   '@floating-ui/react': [ '0.26.19' ],
+106 silly audit   '@floating-ui/react-dom': [ '2.1.1' ],
+106 silly audit   '@floating-ui/utils': [ '0.2.4' ],
+106 silly audit   '@hookform/resolvers': [ '3.9.0' ],
+106 silly audit   '@isaacs/cliui': [ '8.0.2' ],
+106 silly audit   '@jridgewell/gen-mapping': [ '0.3.5' ],
+106 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+106 silly audit   '@jridgewell/set-array': [ '1.2.1' ],
+106 silly audit   '@jridgewell/sourcemap-codec': [ '1.4.15' ],
+106 silly audit   '@jridgewell/trace-mapping': [ '0.3.25' ],
+106 silly audit   '@mantine/code-highlight': [ '7.11.1' ],
+106 silly audit   '@mantine/core': [ '7.11.1' ],
+106 silly audit   'react-remove-scroll': [ '2.5.10', '2.5.5' ],
+106 silly audit   '@mantine/hooks': [ '7.11.1' ],
+106 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+106 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+106 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+106 silly audit   '@pkgjs/parseargs': [ '0.11.0' ],
+106 silly audit   '@radix-ui/primitive': [ '1.0.1' ],
+106 silly audit   '@radix-ui/react-accordion': [ '1.1.2' ],
+106 silly audit   '@radix-ui/react-arrow': [ '1.0.3' ],
+106 silly audit   '@radix-ui/react-collapsible': [ '1.0.3' ],
+106 silly audit   '@radix-ui/react-collection': [ '1.0.3' ],
+106 silly audit   '@radix-ui/react-slot': [ '1.0.2', '1.1.0' ],
+106 silly audit   '@radix-ui/react-compose-refs': [ '1.0.1', '1.1.0' ],
+106 silly audit   '@radix-ui/react-context': [ '1.0.1' ],
+106 silly audit   '@radix-ui/react-dialog': [ '1.0.5' ],
+106 silly audit   '@radix-ui/react-direction': [ '1.0.1' ],
+106 silly audit   '@radix-ui/react-dismissable-layer': [ '1.0.5' ],
+106 silly audit   '@radix-ui/react-dropdown-menu': [ '2.0.6' ],
+106 silly audit   '@radix-ui/react-focus-guards': [ '1.0.1' ],
+106 silly audit   '@radix-ui/react-focus-scope': [ '1.0.4' ],
+106 silly audit   '@radix-ui/react-id': [ '1.0.1' ],
+106 silly audit   '@radix-ui/react-label': [ '2.1.0' ],
+106 silly audit   '@radix-ui/react-primitive': [ '2.0.0', '1.0.3' ],
+106 silly audit   '@radix-ui/react-menu': [ '2.0.6' ],
+106 silly audit   '@radix-ui/react-popper': [ '1.1.3' ],
+106 silly audit   '@radix-ui/react-portal': [ '1.0.4' ],
+106 silly audit   '@radix-ui/react-presence': [ '1.0.1' ],
+106 silly audit   '@radix-ui/react-roving-focus': [ '1.0.4' ],
+106 silly audit   '@radix-ui/react-separator': [ '1.0.3' ],
+106 silly audit   '@radix-ui/react-use-callback-ref': [ '1.0.1' ],
+106 silly audit   '@radix-ui/react-use-controllable-state': [ '1.0.1' ],
+106 silly audit   '@radix-ui/react-use-escape-keydown': [ '1.0.3' ],
+106 silly audit   '@radix-ui/react-use-layout-effect': [ '1.0.1' ],
+106 silly audit   '@radix-ui/react-use-rect': [ '1.0.1' ],
+106 silly audit   '@radix-ui/react-use-size': [ '1.0.1' ],
+106 silly audit   '@radix-ui/rect': [ '1.0.1' ],
+106 silly audit   '@redux-devtools/extension': [ '3.3.0' ],
+106 silly audit   '@swc/counter': [ '0.1.3' ],
+106 silly audit   '@swc/helpers': [ '0.5.5' ],
+106 silly audit   '@types/base16': [ '1.0.5' ],
+106 silly audit   '@types/json-schema': [ '7.0.15' ],
+106 silly audit   '@types/lodash': [ '4.17.6' ],
+106 silly audit   '@types/node': [ '20.14.2' ],
+106 silly audit   '@types/prop-types': [ '15.7.12' ],
+106 silly audit   '@types/react': [ '18.3.3' ],
+106 silly audit   '@types/react-dom': [ '18.3.0' ],
+106 silly audit   '@uploadthing/dropzone': [ '0.4.1' ],
+106 silly audit   '@uploadthing/mime-types': [ '0.2.10' ],
+106 silly audit   '@uploadthing/react': [ '6.6.0' ],
+106 silly audit   '@uploadthing/shared': [ '6.7.5' ],
+106 silly audit   '@webassemblyjs/ast': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/floating-point-hex-parser': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/helper-api-error': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/helper-buffer': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/helper-code-frame': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/helper-fsm': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/helper-module-context': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/helper-wasm-bytecode': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/helper-wasm-section': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/ieee754': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/leb128': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/utf8': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/wasm-edit': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/wasm-gen': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/wasm-opt': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/wasm-parser': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/wast-parser': [ '1.9.0' ],
+106 silly audit   '@webassemblyjs/wast-printer': [ '1.9.0' ],
+106 silly audit   '@xtuc/ieee754': [ '1.2.0' ],
+106 silly audit   '@xtuc/long': [ '4.2.2' ],
+106 silly audit   acorn: [ '6.4.2' ],
+106 silly audit   ajv: [ '6.12.6' ],
+106 silly audit   'ajv-errors': [ '1.0.1' ],
+106 silly audit   'ajv-keywords': [ '3.5.2' ],
+106 silly audit   'ansi-regex': [ '6.0.1', '5.0.1' ],
+106 silly audit   'ansi-styles': [ '6.2.1', '4.3.0' ],
+106 silly audit   'any-promise': [ '1.3.0' ],
+106 silly audit   anymatch: [ '3.1.3', '2.0.0' ],
+106 silly audit   aproba: [ '1.2.0' ],
+106 silly audit   arg: [ '5.0.2' ],
+106 silly audit   'aria-hidden': [ '1.2.4' ],
+106 silly audit   'arr-diff': [ '4.0.0' ],
+106 silly audit   'arr-flatten': [ '1.1.0' ],
+106 silly audit   'arr-union': [ '3.1.0' ],
+106 silly audit   'array-unique': [ '0.3.2' ],
+106 silly audit   'asn1.js': [ '4.10.1' ],
+106 silly audit   'bn.js': [ '4.12.0', '5.2.1' ],
+106 silly audit   assert: [ '1.5.1' ],
+106 silly audit   inherits: [ '2.0.3', '2.0.4' ],
+106 silly audit   util: [ '0.10.4', '0.11.1' ],
+106 silly audit   'assign-symbols': [ '1.0.0' ],
+106 silly audit   'async-each': [ '1.0.6' ],
+106 silly audit   asynckit: [ '0.4.0' ],
+106 silly audit   atob: [ '2.1.2' ],
+106 silly audit   autoprefixer: [ '10.4.19' ],
+106 silly audit   axios: [ '1.7.2' ],
+106 silly audit   'balanced-match': [ '1.0.2' ],
+106 silly audit   base: [ '0.11.2' ],
+106 silly audit   'define-property': [ '1.0.0', '0.2.5', '2.0.2' ],
+106 silly audit   'is-descriptor': [ '1.0.3', '0.1.7' ],
+106 silly audit   base16: [ '1.0.0' ],
+106 silly audit   'base64-js': [ '1.5.1' ],
+106 silly audit   'big.js': [ '5.2.2' ],
+106 silly audit   'binary-extensions': [ '2.3.0', '1.13.1' ],
+106 silly audit   bindings: [ '1.5.0' ],
+106 silly audit   bluebird: [ '3.7.2' ],
+106 silly audit   'brace-expansion': [ '2.0.1', '1.1.11' ],
+106 silly audit   braces: [ '3.0.3', '2.3.2' ],
+106 silly audit   brorand: [ '1.1.0' ],
+106 silly audit   'browserify-aes': [ '1.2.0' ],
+106 silly audit   'browserify-cipher': [ '1.0.1' ],
+106 silly audit   'browserify-des': [ '1.0.2' ],
+106 silly audit   'browserify-rsa': [ '4.1.0' ],
+106 silly audit   'browserify-sign': [ '4.2.3' ],
+106 silly audit   'browserify-zlib': [ '0.2.0' ],
+106 silly audit   browserslist: [ '4.23.1' ],
+106 silly audit   buffer: [ '4.9.2' ],
+106 silly audit   'buffer-from': [ '1.1.2' ],
+106 silly audit   'buffer-xor': [ '1.0.3' ],
+106 silly audit   'builtin-status-codes': [ '3.0.0' ],
+106 silly audit   busboy: [ '1.6.0' ],
+106 silly audit   cacache: [ '12.0.4' ],
+106 silly audit   glob: [ '7.2.3', '10.4.1' ],
+106 silly audit   'lru-cache': [ '5.1.1', '10.2.2' ],
+106 silly audit   minimatch: [ '3.1.2', '9.0.4' ],
+106 silly audit   'cache-base': [ '1.0.1' ],
+106 silly audit   'call-bind': [ '1.0.7' ],
+106 silly audit   'camelcase-css': [ '2.0.1' ],
+106 silly audit   'caniuse-lite': [ '1.0.30001634' ],
+106 silly audit   chalk: [ '3.0.0' ],
+106 silly audit   chokidar: [ '3.6.0', '2.1.8' ],
+106 silly audit   'glob-parent': [ '5.1.2', '6.0.2', '3.1.0' ],
+106 silly audit   chownr: [ '1.1.4' ],
+106 silly audit   'chrome-trace-event': [ '1.0.4' ],
+106 silly audit   'cipher-base': [ '1.0.4' ],
+106 silly audit   'class-utils': [ '0.3.6' ],
+106 silly audit   'class-variance-authority': [ '0.7.0' ],
+106 silly audit   clsx: [ '2.0.0', '2.1.1' ],
+106 silly audit   'client-only': [ '0.0.1' ],
+106 silly audit   'collection-visit': [ '1.0.0' ],
+106 silly audit   color: [ '3.2.1' ],
+106 silly audit   'color-convert': [ '2.0.1', '1.9.3' ],
+106 silly audit   'color-name': [ '1.1.4', '1.1.3' ],
+106 silly audit   'color-string': [ '1.9.1' ],
+106 silly audit   'combined-stream': [ '1.0.8' ],
+106 silly audit   commander: [ '4.1.1', '2.20.3' ],
+106 silly audit   commondir: [ '1.0.1' ],
+106 silly audit   'component-emitter': [ '1.3.1' ],
+106 silly audit   'concat-map': [ '0.0.1' ],
+106 silly audit   'concat-stream': [ '1.6.2' ],
+106 silly audit   consola: [ '3.2.3' ],
+106 silly audit   'console-browserify': [ '1.2.0' ],
+106 silly audit   'constants-browserify': [ '1.0.0' ],
+106 silly audit   'copy-concurrently': [ '1.0.5' ],
+106 silly audit   'copy-descriptor': [ '0.1.1' ],
+106 silly audit   'core-util-is': [ '1.0.3' ],
+106 silly audit   'create-ecdh': [ '4.0.4' ],
+106 silly audit   'create-hash': [ '1.2.0' ],
+106 silly audit   'create-hmac': [ '1.1.7' ],
+106 silly audit   'cross-spawn': [ '7.0.3' ],
+106 silly audit   'crypto-browserify': [ '3.12.0' ],
+106 silly audit   cssesc: [ '3.0.0' ],
+106 silly audit   csstype: [ '3.1.3' ],
+106 silly audit   cyclist: [ '1.0.2' ],
+106 silly audit   debug: [ '2.6.9' ],
+106 silly audit   'decode-uri-component': [ '0.2.2' ],
+106 silly audit   'define-data-property': [ '1.1.4' ],
+106 silly audit   'define-properties': [ '1.2.1' ],
+106 silly audit   'delayed-stream': [ '1.0.0' ],
+106 silly audit   'des.js': [ '1.1.0' ],
+106 silly audit   'detect-node-es': [ '1.1.0' ],
+106 silly audit   didyoumean: [ '1.2.2' ],
+106 silly audit   'diff-match-patch': [ '1.0.5' ],
+106 silly audit   'diffie-hellman': [ '5.0.3' ],
+106 silly audit   dlv: [ '1.1.3' ],
+106 silly audit   'domain-browser': [ '1.2.0' ],
+106 silly audit   duplexify: [ '3.7.1' ],
+106 silly audit   eastasianwidth: [ '0.2.0' ],
+106 silly audit   effect: [ '3.3.2' ],
+106 silly audit   'electron-to-chromium': [ '1.4.816' ],
+106 silly audit   elliptic: [ '6.5.5' ],
+106 silly audit   'embla-carousel': [ '8.1.5' ],
+106 silly audit   'embla-carousel-autoplay': [ '8.1.5' ],
+106 silly audit   'embla-carousel-react': [ '8.1.5' ],
+106 silly audit   'embla-carousel-reactive-utils': [ '8.1.5' ],
+106 silly audit   'emoji-regex': [ '9.2.2', '8.0.0' ],
+106 silly audit   'emojis-list': [ '3.0.0' ],
+106 silly audit   'end-of-stream': [ '1.4.4' ],
+106 silly audit   'enhanced-resolve': [ '4.5.0' ],
+106 silly audit   'memory-fs': [ '0.5.0', '0.4.1' ],
+106 silly audit   errno: [ '0.1.8' ],
+106 silly audit   'es-define-property': [ '1.0.0' ],
+106 silly audit   'es-errors': [ '1.3.0' ],
+106 silly audit   escalade: [ '3.1.2' ],
+106 silly audit   'eslint-scope': [ '4.0.3' ],
+106 silly audit   esrecurse: [ '4.3.0' ],
+106 silly audit   estraverse: [ '5.3.0', '4.3.0' ],
+106 silly audit   events: [ '3.3.0' ],
+106 silly audit   evp_bytestokey: [ '1.0.3' ],
+106 silly audit   'expand-brackets': [ '2.1.4' ],
+106 silly audit   'extend-shallow': [ '2.0.1', '3.0.2' ],
+106 silly audit   extglob: [ '2.0.4' ],
+106 silly audit   'fast-check': [ '3.19.0' ],
+106 silly audit   'fast-deep-equal': [ '3.1.3' ],
+106 silly audit   'fast-glob': [ '3.3.2' ],
+106 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+106 silly audit   fastq: [ '1.17.1' ],
+106 silly audit   'figgy-pudding': [ '3.5.2' ],
+106 silly audit   'file-loader': [ '4.3.0' ],
+106 silly audit   'file-selector': [ '0.6.0' ],
+106 silly audit   'file-uri-to-path': [ '1.0.0' ],
+106 silly audit   'fill-range': [ '7.1.1', '4.0.0' ],
+106 silly audit   'find-cache-dir': [ '2.1.0' ],
+106 silly audit   'find-up': [ '3.0.0' ],
+106 silly audit   'flush-write-stream': [ '1.1.1' ],
+106 silly audit   'follow-redirects': [ '1.15.6' ],
+106 silly audit   'for-in': [ '1.0.2' ],
+106 silly audit   'foreground-child': [ '3.2.0' ],
+106 silly audit   'form-data': [ '4.0.0' ],
+106 silly audit   'fraction.js': [ '4.3.7' ],
+106 silly audit   'fragment-cache': [ '0.2.1' ],
+106 silly audit   from2: [ '2.3.0' ],
+106 silly audit   'fs-write-stream-atomic': [ '1.0.10' ],
+106 silly audit   'fs.realpath': [ '1.0.0' ],
+106 silly audit   fsevents: [ '2.3.3', '1.2.13' ],
+106 silly audit   'function-bind': [ '1.1.2' ],
+106 silly audit   'get-intrinsic': [ '1.2.4' ],
+106 silly audit   'get-nonce': [ '1.0.1' ],
+106 silly audit   'get-value': [ '2.0.6' ],
+106 silly audit   gopd: [ '1.0.1' ],
+106 silly audit   'graceful-fs': [ '4.2.11' ],
+106 silly audit   'has-flag': [ '4.0.0' ],
+106 silly audit   'has-property-descriptors': [ '1.0.2' ],
+106 silly audit   'has-proto': [ '1.0.3' ],
+106 silly audit   'has-symbols': [ '1.0.3' ],
+106 silly audit   'has-value': [ '1.0.0', '0.3.1' ],
+106 silly audit   'has-values': [ '1.0.0', '0.1.4' ],
+106 silly audit   'is-number': [ '3.0.0', '7.0.0' ],
+106 silly audit   'kind-of': [ '3.2.2', '4.0.0', '6.0.3' ],
+106 silly audit   'hash-base': [ '3.0.4' ],
+106 silly audit   'hash.js': [ '1.1.7' ],
+106 silly audit   hasown: [ '2.0.2' ],
+106 silly audit   'highlight.js': [ '11.9.0' ],
+106 silly audit   'hmac-drbg': [ '1.0.1' ],
+106 silly audit   'https-browserify': [ '1.0.0' ],
+106 silly audit   ieee754: [ '1.2.1' ],
+106 silly audit   iferr: [ '0.1.5' ],
+106 silly audit   immutable: [ '4.3.6' ],
+106 silly audit   imurmurhash: [ '0.1.4' ],
+106 silly audit   'infer-owner': [ '1.0.4' ],
+106 silly audit   inflight: [ '1.0.6' ],
+106 silly audit   invariant: [ '2.2.4' ],
+106 silly audit   'is-accessor-descriptor': [ '1.0.1' ],
+106 silly audit   'is-arrayish': [ '0.3.2' ],
+106 silly audit   'is-binary-path': [ '2.1.0', '1.0.1' ],
+106 silly audit   'is-buffer': [ '1.1.6' ],
+106 silly audit   'is-core-module': [ '2.13.1' ],
+106 silly audit   'is-data-descriptor': [ '1.0.1' ],
+106 silly audit   'is-extendable': [ '0.1.1', '1.0.1' ],
+106 silly audit   'is-extglob': [ '2.1.1' ],
+106 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+106 silly audit   'is-glob': [ '4.0.3', '3.1.0' ],
+106 silly audit   'is-plain-object': [ '2.0.4' ],
+106 silly audit   'is-windows': [ '1.0.2' ],
+106 silly audit   'is-wsl': [ '1.1.0' ],
+106 silly audit   isarray: [ '1.0.0' ],
+106 silly audit   isexe: [ '2.0.0' ],
+106 silly audit   isobject: [ '3.0.1', '2.1.0' ],
+106 silly audit   jackspeak: [ '3.4.0' ],
+106 silly audit   'javascript-stringify': [ '2.1.0' ],
+106 silly audit   jiti: [ '1.21.6' ],
+106 silly audit   jotai: [ '2.8.4' ],
+106 silly audit   'jotai-devtools': [ '0.10.0' ],
+106 silly audit   'js-tokens': [ '4.0.0' ],
+106 silly audit   'json-parse-better-errors': [ '1.0.2' ],
+106 silly audit   'json-schema-traverse': [ '0.4.1' ],
+106 silly audit   json5: [ '1.0.2' ],
+106 silly audit   jsondiffpatch: [ '0.5.0' ],
+106 silly audit   lilconfig: [ '2.1.0', '3.1.2' ],
+106 silly audit   'lines-and-columns': [ '1.2.4' ],
+106 silly audit   'loader-runner': [ '2.4.0' ],
+106 silly audit   'loader-utils': [ '1.4.2' ],
+106 silly audit   'locate-path': [ '3.0.0' ],
+106 silly audit   'lodash.curry': [ '4.1.1' ],
+106 silly audit   'loose-envify': [ '1.4.0' ],
+106 silly audit   'lucide-react': [ '0.394.0' ],
+106 silly audit   'make-dir': [ '2.1.0' ],
+106 silly audit   pify: [ '4.0.1', '2.3.0' ],
+106 silly audit   'map-cache': [ '0.2.2' ],
+106 silly audit   'map-visit': [ '1.0.0' ],
+106 silly audit   'md5.js': [ '1.3.5' ],
+106 silly audit   merge2: [ '1.4.1' ],
+106 silly audit   micromatch: [ '4.0.7', '3.1.10' ],
+106 silly audit   'miller-rabin': [ '4.0.1' ],
+106 silly audit   'mime-db': [ '1.52.0' ],
+106 silly audit   'mime-types': [ '2.1.35' ],
+106 silly audit   'minimalistic-assert': [ '1.0.1' ],
+106 silly audit   'minimalistic-crypto-utils': [ '1.0.1' ],
+106 silly audit   minimist: [ '1.2.8' ],
+106 silly audit   minipass: [ '7.1.2' ],
+106 silly audit   mississippi: [ '3.0.0' ],
+106 silly audit   'mixin-deep': [ '1.3.2' ],
+106 silly audit   mkdirp: [ '0.5.6' ],
+106 silly audit   'move-concurrently': [ '1.0.1' ],
+106 silly audit   ms: [ '2.0.0' ],
+106 silly audit   mz: [ '2.7.0' ],
+106 silly audit   nan: [ '2.20.0' ],
+106 silly audit   nanoid: [ '3.3.7' ],
+106 silly audit   nanomatch: [ '1.2.13' ],
+106 silly audit   'neo-async': [ '2.6.2' ],
+106 silly audit   'next-themes': [ '0.3.0' ],
+106 silly audit   'next-videos': [ '1.4.1' ],
+106 silly audit   postcss: [ '8.4.39', '8.4.31' ],
+106 silly audit   'node-libs-browser': [ '2.2.1' ],
+106 silly audit   punycode: [ '1.4.1', '2.3.1' ],
+106 silly audit   'node-releases': [ '2.0.14' ],
+106 silly audit   'normalize-path': [ '3.0.0', '2.1.1' ],
+106 silly audit   'normalize-range': [ '0.1.2' ],
+106 silly audit   'object-assign': [ '4.1.1' ],
+106 silly audit   'object-copy': [ '0.1.0' ],
+106 silly audit   'object-hash': [ '3.0.0' ],
+106 silly audit   'object-inspect': [ '1.13.1' ],
+106 silly audit   'object-keys': [ '1.1.1' ],
+106 silly audit   'object-visit': [ '1.0.1' ],
+106 silly audit   'object.assign': [ '4.1.5' ],
+106 silly audit   'object.pick': [ '1.3.0' ],
+106 silly audit   once: [ '1.4.0' ],
+106 silly audit   'os-browserify': [ '0.3.0' ],
+106 silly audit   'p-limit': [ '2.3.0' ],
+106 silly audit   'p-locate': [ '3.0.0' ],
+106 silly audit   'p-try': [ '2.2.0' ],
+106 silly audit   pako: [ '1.0.11' ],
+106 silly audit   'parallel-transform': [ '1.2.0' ],
+106 silly audit   'parse-asn1': [ '5.1.7' ],
+106 silly audit   pascalcase: [ '0.1.1' ],
+106 silly audit   'path-browserify': [ '0.0.1' ],
+106 silly audit   'path-dirname': [ '1.0.2' ],
+106 silly audit   'path-exists': [ '3.0.0' ],
+106 silly audit   'path-is-absolute': [ '1.0.1' ],
+106 silly audit   'path-key': [ '3.1.1' ],
+106 silly audit   'path-parse': [ '1.0.7' ],
+106 silly audit   'path-scurry': [ '1.11.1' ],
+106 silly audit   pbkdf2: [ '3.1.2' ],
+106 silly audit   picocolors: [ '1.0.1' ],
+106 silly audit   picomatch: [ '2.3.1' ],
+106 silly audit   pirates: [ '4.0.6' ],
+106 silly audit   'pkg-dir': [ '3.0.0' ],
+106 silly audit   'posix-character-classes': [ '0.1.1' ],
+106 silly audit   'postcss-import': [ '15.1.0' ],
+106 silly audit   'postcss-js': [ '4.0.1' ],
+106 silly audit   'postcss-load-config': [ '4.0.2' ],
+106 silly audit   'postcss-nested': [ '6.0.1' ],
+106 silly audit   'postcss-selector-parser': [ '6.1.0' ],
+106 silly audit   'postcss-value-parser': [ '4.2.0' ],
+106 silly audit   process: [ '0.11.10' ],
+106 silly audit   'process-nextick-args': [ '2.0.1' ],
+106 silly audit   'promise-inflight': [ '1.0.1' ],
+106 silly audit   'prop-types': [ '15.8.1' ],
+106 silly audit   'proxy-from-env': [ '1.1.0' ],
+106 silly audit   prr: [ '1.0.1' ],
+106 silly audit   'public-encrypt': [ '4.0.3' ],
+106 silly audit   pump: [ '3.0.0', '2.0.1' ],
+106 silly audit   pumpify: [ '1.5.1' ],
+106 silly audit   'pure-rand': [ '6.1.0' ],
+106 silly audit   qs: [ '6.12.1' ],
+106 silly audit   'querystring-es3': [ '0.2.1' ],
+106 silly audit   'queue-microtask': [ '1.2.3' ],
+106 silly audit   randombytes: [ '2.1.0' ],
+106 silly audit   randomfill: [ '1.0.4' ],
+106 silly audit   'react-base16-styling': [ '0.9.1' ],
+106 silly audit   'react-error-boundary': [ '4.0.13' ],
+106 silly audit   'react-hook-form': [ '7.52.1' ],
+106 silly audit   'react-is': [ '16.13.1' ],
+106 silly audit   'react-json-tree': [ '0.18.0' ],
+106 silly audit   'react-number-format': [ '5.4.0' ],
+106 silly audit   'react-remove-scroll-bar': [ '2.3.6' ],
+106 silly audit   'react-resizable-panels': [ '2.0.10' ],
+106 silly audit   'react-style-singleton': [ '2.2.1' ],
+106 silly audit   'react-textarea-autosize': [ '8.5.3' ],
+106 silly audit   'read-cache': [ '1.0.0' ],
+106 silly audit   'readable-stream': [ '2.3.8' ],
+106 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+106 silly audit   string_decoder: [ '1.1.1', '1.3.0' ],
+106 silly audit   readdirp: [ '3.6.0', '2.2.1' ],
+106 silly audit   redux: [ '5.0.1' ],
+106 silly audit   'regenerator-runtime': [ '0.14.1' ],
+106 silly audit   'regex-not': [ '1.0.2' ],
+106 silly audit   'remove-trailing-separator': [ '1.1.0' ],
+106 silly audit   'repeat-element': [ '1.1.4' ],
+106 silly audit   'repeat-string': [ '1.6.1' ],
+106 silly audit   resolve: [ '1.22.8' ],
+106 silly audit   'resolve-url': [ '0.2.1' ],
+106 silly audit   ret: [ '0.1.15' ],
+106 silly audit   reusify: [ '1.0.4' ],
+106 silly audit   rimraf: [ '2.7.1' ],
+106 silly audit   ripemd160: [ '2.0.2' ],
+106 silly audit   'run-parallel': [ '1.2.0' ],
+106 silly audit   'run-queue': [ '1.0.3' ],
+106 silly audit   'safe-regex': [ '1.1.0' ],
+106 silly audit   scheduler: [ '0.23.2' ],
+106 silly audit   'schema-utils': [ '2.7.1', '1.0.0' ],
+106 silly audit   semver: [ '5.7.2' ],
+106 silly audit   'serialize-javascript': [ '4.0.0' ],
+106 silly audit   'set-function-length': [ '1.2.2' ],
+106 silly audit   'set-value': [ '2.0.1' ],
+106 silly audit   setimmediate: [ '1.0.5' ],
+106 silly audit   'sha.js': [ '2.4.11' ],
+106 silly audit   'shebang-command': [ '2.0.0' ],
+106 silly audit   'shebang-regex': [ '3.0.0' ],
+106 silly audit   'side-channel': [ '1.0.6' ],
+106 silly audit   'signal-exit': [ '4.1.0' ],
+106 silly audit   'simple-swizzle': [ '0.2.2' ],
+106 silly audit   snapdragon: [ '0.8.2' ],
+106 silly audit   'snapdragon-node': [ '2.1.1' ],
+106 silly audit   'snapdragon-util': [ '3.0.1' ],
+106 silly audit   'source-map': [ '0.5.7', '0.6.1' ],
+106 silly audit   sonner: [ '1.5.0' ],
+106 silly audit   'source-list-map': [ '2.0.1' ],
+106 silly audit   'source-map-js': [ '1.2.0' ],
+106 silly audit   'source-map-resolve': [ '0.5.3' ],
+106 silly audit   'source-map-support': [ '0.5.21' ],
+106 silly audit   'source-map-url': [ '0.4.1' ],
+106 silly audit   'split-string': [ '3.1.0' ],
+106 silly audit   ssri: [ '6.0.2' ],
+106 silly audit   'static-extend': [ '0.1.2' ],
+106 silly audit   'std-env': [ '3.7.0' ],
+106 silly audit   'stream-browserify': [ '2.0.2' ],
+106 silly audit   'stream-each': [ '1.2.3' ],
+106 silly audit   'stream-http': [ '2.8.3' ],
+106 silly audit   'stream-shift': [ '1.0.3' ],
+106 silly audit   streamsearch: [ '1.1.0' ],
+106 silly audit   'string-width': [ '5.1.2', '4.2.3' ],
+106 silly audit   'strip-ansi': [ '6.0.1', '7.1.0' ],
+106 silly audit   'styled-jsx': [ '5.1.1' ],
+106 silly audit   sucrase: [ '3.35.0' ],
+106 silly audit   'supports-color': [ '7.2.0' ],
+106 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+106 silly audit   tabbable: [ '6.2.0' ],
+106 silly audit   'tailwind-merge': [ '2.3.0' ],
+106 silly audit   tailwindcss: [ '3.4.4' ],
+106 silly audit   'tailwindcss-animate': [ '1.0.7' ],
+106 silly audit   tapable: [ '1.1.3' ],
+106 silly audit   terser: [ '4.8.1' ],
+106 silly audit   'terser-webpack-plugin': [ '1.4.5' ],
+106 silly audit   thenify: [ '3.3.1' ],
+106 silly audit   'thenify-all': [ '1.6.0' ],
+106 silly audit   through2: [ '2.0.5' ],
+106 silly audit   'timers-browserify': [ '2.0.12' ],
+106 silly audit   'to-arraybuffer': [ '1.0.1' ],
+106 silly audit   'to-object-path': [ '0.3.0' ],
+106 silly audit   'to-regex': [ '3.0.2' ],
+106 silly audit   'to-regex-range': [ '5.0.1', '2.1.1' ],
+106 silly audit   'ts-interface-checker': [ '0.1.13' ],
+106 silly audit   tslib: [ '2.6.3' ],
+106 silly audit   'tty-browserify': [ '0.0.0' ],
+106 silly audit   'type-fest': [ '4.21.0' ],
+106 silly audit   typedarray: [ '0.0.6' ],
+106 silly audit   typescript: [ '5.4.5' ],
+106 silly audit   'undici-types': [ '5.26.5' ],
+106 silly audit   'union-value': [ '1.0.1' ],
+106 silly audit   'unique-filename': [ '1.1.1' ],
+106 silly audit   'unique-slug': [ '2.0.2' ],
+106 silly audit   'unset-value': [ '1.0.0' ],
+106 silly audit   upath: [ '1.2.0' ],
+106 silly audit   'update-browserslist-db': [ '1.1.0' ],
+106 silly audit   uploadthing: [ '6.12.0' ],
+106 silly audit   'uri-js': [ '4.4.1' ],
+106 silly audit   urix: [ '0.1.0' ],
+106 silly audit   url: [ '0.11.3' ],
+106 silly audit   use: [ '3.1.1' ],
+106 silly audit   'use-callback-ref': [ '1.3.2' ],
+106 silly audit   'use-composed-ref': [ '1.3.0' ],
+106 silly audit   'use-isomorphic-layout-effect': [ '1.1.2' ],
+106 silly audit   'use-latest': [ '1.2.1' ],
+106 silly audit   'use-sidecar': [ '1.1.2' ],
+106 silly audit   'util-deprecate': [ '1.0.2' ],
+106 silly audit   'vm-browserify': [ '1.1.2' ],
+106 silly audit   watchpack: [ '1.7.5' ],
+106 silly audit   'watchpack-chokidar2': [ '2.0.1' ],
+106 silly audit   webpack: [ '4.47.0' ],
+106 silly audit   'webpack-sources': [ '1.4.3' ],
+106 silly audit   which: [ '2.0.2' ],
+106 silly audit   'worker-farm': [ '1.7.0' ],
+106 silly audit   'wrap-ansi': [ '8.1.0', '7.0.0' ],
+106 silly audit   wrappy: [ '1.0.2' ],
+106 silly audit   xtend: [ '4.0.2' ],
+106 silly audit   y18n: [ '4.0.3' ],
+106 silly audit   yallist: [ '3.1.1' ],
+106 silly audit   yaml: [ '2.4.5' ],
+106 silly audit   zod: [ '3.23.8' ],
+106 silly audit   next: [ '14.2.5' ],
+106 silly audit   react: [ '18.3.1' ],
+106 silly audit   'react-dom': [ '18.3.1' ],
+106 silly audit   '@next/env': [ '14.2.5' ],
+106 silly audit   '@next/swc-darwin-arm64': [ '14.2.5' ],
+106 silly audit   '@next/swc-darwin-x64': [ '14.2.5' ],
+106 silly audit   '@next/swc-linux-arm64-gnu': [ '14.2.5' ],
+106 silly audit   '@next/swc-linux-arm64-musl': [ '14.2.5' ],
+106 silly audit   '@next/swc-linux-x64-gnu': [ '14.2.5' ],
+106 silly audit   '@next/swc-linux-x64-musl': [ '14.2.5' ],
+106 silly audit   '@next/swc-win32-arm64-msvc': [ '14.2.5' ],
+106 silly audit   '@next/swc-win32-ia32-msvc': [ '14.2.5' ],
+106 silly audit   '@next/swc-win32-x64-msvc': [ '14.2.5' ]
+106 silly audit }
+107 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\@next\swc-win32-ia32-msvc
+108 silly reify mark deleted [
+108 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\swc-win32-ia32-msvc'
+108 silly reify ]
+109 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\@next\swc-win32-arm64-msvc
+110 silly reify mark deleted [
+110 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\swc-win32-arm64-msvc'
+110 silly reify ]
+111 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\@next\swc-linux-x64-musl
+112 silly reify mark deleted [
+112 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\swc-linux-x64-musl'
+112 silly reify ]
+113 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\@next\swc-linux-x64-gnu
+114 silly reify mark deleted [
+114 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\swc-linux-x64-gnu'
+114 silly reify ]
+115 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\@next\swc-linux-arm64-musl
+116 silly reify mark deleted [
+116 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\swc-linux-arm64-musl'
+116 silly reify ]
+117 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\@next\swc-linux-arm64-gnu
+118 silly reify mark deleted [
+118 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\swc-linux-arm64-gnu'
+118 silly reify ]
+119 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\@next\swc-darwin-x64
+120 silly reify mark deleted [
+120 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\swc-darwin-x64'
+120 silly reify ]
+121 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\@next\swc-darwin-arm64
+122 silly reify mark deleted [
+122 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\@next\\swc-darwin-arm64'
+122 silly reify ]
+123 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\fsevents
+124 silly reify mark deleted [
+124 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\fsevents'
+124 silly reify ]
+125 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\watchpack-chokidar2\node_modules\fsevents
+126 silly reify mark deleted [
+126 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\watchpack-chokidar2\\node_modules\\fsevents'
+126 silly reify ]
+127 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\bindings
+128 silly reify mark deleted [
+128 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\bindings'
+128 silly reify ]
+129 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\nan
+130 silly reify mark deleted [
+130 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\nan'
+130 silly reify ]
+131 verbose reify failed optional dependency C:\Users\saadr\Desktop\AudioGenius\frontend\node_modules\file-uri-to-path
+132 silly reify mark deleted [
+132 silly reify   'C:\\Users\\saadr\\Desktop\\AudioGenius\\frontend\\node_modules\\file-uri-to-path'
+132 silly reify ]
+133 silly tarball no local data for nan@https://registry.npmjs.org/nan/-/nan-2.20.0.tgz. Extracting by manifest.
+134 silly tarball no local data for file-uri-to-path@https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz. Extracting by manifest.
+135 silly tarball no local data for bindings@https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz. Extracting by manifest.
+136 silly tarball no local data for @next/swc-win32-x64-msvc@https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-14.2.5.tgz. Extracting by manifest.
+137 silly tarball no local data for next@https://registry.npmjs.org/next/-/next-14.2.5.tgz. Extracting by manifest.
+138 silly tarball no local data for @next/env@https://registry.npmjs.org/@next/env/-/env-14.2.5.tgz. Extracting by manifest.
+139 http fetch GET 200 https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz 95ms (cache miss)
+140 http fetch GET 200 https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz 95ms (cache miss)
+141 http fetch GET 200 https://registry.npmjs.org/@next/env/-/env-14.2.5.tgz 94ms (cache miss)
+142 http fetch GET 200 https://registry.npmjs.org/nan/-/nan-2.20.0.tgz 204ms (cache miss)
+143 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 466ms
+144 silly audit report {
+144 silly audit report   braces: [
+144 silly audit report     {
+144 silly audit report       id: 1098094,
+144 silly audit report       url: 'https://github.com/advisories/GHSA-grv7-fg5c-xmjg',
+144 silly audit report       title: 'Uncontrolled resource consumption in braces',
+144 silly audit report       severity: 'high',
+144 silly audit report       vulnerable_versions: '<3.0.3',
+144 silly audit report       cwe: [Array],
+144 silly audit report       cvss: [Object]
+144 silly audit report     }
+144 silly audit report   ]
+144 silly audit report }
+145 silly packumentCache corgi:https://registry.npmjs.org/braces cache-miss
+146 http fetch GET 200 https://registry.npmjs.org/braces 64ms (cache miss)
+147 silly packumentCache corgi:https://registry.npmjs.org/braces set size:undefined disposed:false
+148 silly packumentCache corgi:https://registry.npmjs.org/chokidar cache-miss
+149 silly packumentCache corgi:https://registry.npmjs.org/micromatch cache-miss
+150 http fetch GET 200 https://registry.npmjs.org/chokidar 56ms (cache miss)
+151 silly packumentCache corgi:https://registry.npmjs.org/chokidar set size:undefined disposed:false
+152 http fetch GET 200 https://registry.npmjs.org/micromatch 62ms (cache miss)
+153 silly packumentCache corgi:https://registry.npmjs.org/micromatch set size:undefined disposed:false
+154 silly packumentCache corgi:https://registry.npmjs.org/watchpack-chokidar2 cache-miss
+155 http fetch GET 200 https://registry.npmjs.org/watchpack-chokidar2 153ms (cache miss)
+156 silly packumentCache corgi:https://registry.npmjs.org/watchpack-chokidar2 set size:undefined disposed:false
+157 silly packumentCache corgi:https://registry.npmjs.org/anymatch cache-miss
+158 silly packumentCache corgi:https://registry.npmjs.org/readdirp cache-miss
+159 silly packumentCache corgi:https://registry.npmjs.org/webpack cache-miss
+160 http fetch GET 200 https://registry.npmjs.org/anymatch 178ms (cache miss)
+161 silly packumentCache corgi:https://registry.npmjs.org/anymatch set size:undefined disposed:false
+162 http fetch GET 200 https://registry.npmjs.org/readdirp 224ms (cache miss)
+163 silly packumentCache corgi:https://registry.npmjs.org/readdirp set size:undefined disposed:false
+164 http fetch GET 200 https://registry.npmjs.org/webpack 1205ms (cache miss)
+165 silly packumentCache corgi:https://registry.npmjs.org/webpack set size:undefined disposed:false
+166 silly packumentCache corgi:https://registry.npmjs.org/watchpack cache-miss
+167 http fetch GET 200 https://registry.npmjs.org/watchpack 190ms (cache miss)
+168 silly packumentCache corgi:https://registry.npmjs.org/watchpack set size:undefined disposed:false
+169 silly packumentCache corgi:https://registry.npmjs.org/file-loader cache-miss
+170 silly packumentCache corgi:https://registry.npmjs.org/terser-webpack-plugin cache-miss
+171 http fetch GET 200 https://registry.npmjs.org/file-loader 62ms (cache miss)
+172 silly packumentCache corgi:https://registry.npmjs.org/file-loader set size:undefined disposed:false
+173 http fetch GET 200 https://registry.npmjs.org/terser-webpack-plugin 106ms (cache miss)
+174 silly packumentCache corgi:https://registry.npmjs.org/terser-webpack-plugin set size:undefined disposed:false
+175 silly packumentCache corgi:https://registry.npmjs.org/next-videos cache-miss
+176 http fetch GET 200 https://registry.npmjs.org/next-videos 884ms (cache miss)
+177 silly packumentCache corgi:https://registry.npmjs.org/next-videos set size:undefined disposed:false
+178 http fetch GET 200 https://registry.npmjs.org/next/-/next-14.2.5.tgz 16680ms (cache miss)
+179 http fetch GET 200 https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-14.2.5.tgz 29642ms (cache miss)
+180 silly ADD
+181 silly ADD
+182 silly ADD
+183 silly ADD
+184 silly ADD
+185 silly ADD
+186 silly ADD
+187 silly ADD
+188 silly ADD
+189 silly ADD
+190 silly ADD
+191 silly ADD
+192 silly CHANGE node_modules/@next/swc-win32-x64-msvc
+193 silly CHANGE node_modules/@next/env
+194 silly ADD
+195 silly CHANGE node_modules/next
+196 verbose cwd C:\Users\saadr\Desktop\AudioGenius\frontend
+197 verbose os Windows_NT 10.0.22631
+198 verbose node v22.3.0
+199 verbose npm  v10.8.2
+200 verbose exit 0
+201 info ok

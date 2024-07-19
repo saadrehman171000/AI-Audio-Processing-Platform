@@ -1,8 +1,40 @@
 "use client";
 import React from "react";
 import { Button } from "./ui/button";
+import axios from "axios";
+import { useUser } from "@/app/state/state";
+import { useRouter } from "next/navigation";
 
 const PricingTable = () => {
+  const router = useRouter();
+  const { getUser } = useUser();
+  console.log(getUser);
+  const handleBuyNow = async () => {
+    const user = getUser();
+    console.log("hello", user);
+    console.log("prcingin", user?.accessToken);
+    if (!user) {
+      console.error("User is not logged in or access token is missing");
+      return;
+    }
+    try {
+      const response = await axios.post(
+        "http://localhost:3000/user/subscribe/",
+        { name: "BASIC" },
+        {
+          headers: {
+            Authorization: `Bearer ${user?.accessToken}`,
+          },
+        }
+      );
+
+      router.push(`${response.data.url}`);
+
+      console.log(response.data);
+    } catch (error) {
+      console.error("Error during subscription:", error);
+    }
+  };
   const plans = [
     {
       name: "Free",
@@ -83,7 +115,10 @@ const PricingTable = () => {
             <p className="text-3xl font-bold tracking-tighter mb-4">
               {plan.price}
             </p>
-            <Button className="px-6 py-2 bg-[#1b586c] rounded-full text-white font-extralight mb-4 hover:bg-[#1b586c] hover:opacity-80">
+            <Button
+              onClick={handleBuyNow}
+              className="px-6 py-2 bg-[#1b586c] rounded-full text-white font-extralight mb-4 hover:bg-[#1b586c] hover:opacity-80"
+            >
               Buy Now
             </Button>
             <ul className="text-left tracking-tighter">
